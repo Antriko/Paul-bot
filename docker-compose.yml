@@ -1,5 +1,5 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    paulbot:
+        build:
+            context: .
+            dockerfile: Dockerfile

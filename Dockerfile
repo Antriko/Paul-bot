@@ -1,12 +1,12 @@
 FROM node:latest
 ENV NODE_ENV=production
 
-WORKDIR /app
+WORKDIR /paulbot
 
-COPY ["package.json", "package-lock.json*", "./"]
+COPY ["package.json", "package-lock.json*", "./paulbot"]
 
 RUN npm install
 
-COPY . .
+COPY ./ /paulbot/
 
 CMD [ "node", "bot.js" ]
